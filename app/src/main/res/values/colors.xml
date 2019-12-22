@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Main_background_Color_white">#E2E2E2</color>
+    <color name="Dark_grey">#3f3f3f</color>
+    <color name="Blue_brand">#361bcb</color>
+    <color name="Pink">#ac5f97</color>
+</resources>
