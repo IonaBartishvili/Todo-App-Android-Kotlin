@@ -37,6 +37,15 @@ class MainActivity : AppCompatActivity() {
         val newtodo = inputNewTODO.text.toString()
         todos.make(newtodo)
     }
+    
+    
+    // ai es PREFS cvladia romelic gvinda globaluri cvladi ikos da mivwvdet getView() metodshi elementebis amosagebad
+    fun makePreferences(){
+        val newtodo = inputNewTODO.text.toString()
+        val prefs = getSharedPreferences("Todo List", Context.MODE_APPEND).edit()
+        prefs.putString(newtodo, newtodo)
+        prefs.apply()
+    }
 
 
 
@@ -52,7 +61,8 @@ class MainActivity : AppCompatActivity() {
             val row_ui = layoutInflater.inflate(R.layout.row_ui, parent, false)
 
             val nameTextView = row_ui.findViewById<TextView>(R.id.todo_name)
-            nameTextView.text = todos.names.get(position)
+//             nameTextView.text = todos.names.get(position)
+            nameTextView.text = // აი აქ რომ მივწვდე Rowში ჩაწაწერად
 
             return row_ui
 //            val textView = TextView(mContext)
